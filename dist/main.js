@@ -1,17 +1,21 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/a.js":
 /*!******************!*\
   !*** ./src/a.js ***!
   \******************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-const c = __webpack_require__(/*! ./c */ "./src/c.js");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "x": () => (/* binding */ x)
+/* harmony export */ });
+/* harmony import */ var _c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./c */ "./src/c.js");
 
-module.exports = {
-  x: 2 + c.x,
-};
+
+const x = 2 + _c__WEBPACK_IMPORTED_MODULE_0__.x;
 
 
 /***/ }),
@@ -20,11 +24,13 @@ module.exports = {
 /*!******************!*\
   !*** ./src/b.js ***!
   \******************/
-/***/ ((module) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-module.exports = {
-  x: 3,
-};
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "x": () => (/* binding */ x)
+/* harmony export */ });
+const x = 3;
 
 
 /***/ }),
@@ -33,11 +39,13 @@ module.exports = {
 /*!******************!*\
   !*** ./src/c.js ***!
   \******************/
-/***/ ((module) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-module.exports = {
-  x: 7,
-};
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "x": () => (/* binding */ x)
+/* harmony export */ });
+const x = 7;
 
 
 /***/ })
@@ -69,16 +77,48 @@ module.exports = {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
-const a = __webpack_require__(/*! ./a */ "./src/a.js");
-const b = __webpack_require__(/*! ./b */ "./src/b.js");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./a */ "./src/a.js");
+/* harmony import */ var _b__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./b */ "./src/b.js");
 
-console.log(a, b, a.x + b.x);
+
+
+console.log(_a__WEBPACK_IMPORTED_MODULE_0__, _b__WEBPACK_IMPORTED_MODULE_1__, _a__WEBPACK_IMPORTED_MODULE_0__.x + _b__WEBPACK_IMPORTED_MODULE_1__.x);
 
 })();
 

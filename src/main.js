@@ -1,4 +1,4 @@
-const a = require("./a");
-const b = require("./b");
+import * as a from "./a";
+import * as b from "./b";
 
 console.log(a, b, a.x + b.x);

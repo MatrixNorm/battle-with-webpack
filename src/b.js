@@ -1,3 +1,1 @@
-module.exports = {
-  x: 3,
-};
+export const x = 3;

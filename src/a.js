@@ -1,5 +1,3 @@
-const c = require("./c");
+import * as c from "./c";
 
-module.exports = {
-  x: 2 + c.x,
-};
+export const x = 2 + c.x;

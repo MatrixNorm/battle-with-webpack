@@ -1,3 +1,1 @@
-module.exports = {
-  x: 7,
-};
+export const x = 7;
