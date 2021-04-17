@@ -1,4 +1,4 @@
 import * as a from "./a";
 import * as b from "./b";
 
-console.log(a, b, a.x + b.x);
+console.log(a.x + b.x);

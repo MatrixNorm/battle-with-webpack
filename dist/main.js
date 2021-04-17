@@ -118,7 +118,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-console.log(_a__WEBPACK_IMPORTED_MODULE_0__, _b__WEBPACK_IMPORTED_MODULE_1__, _a__WEBPACK_IMPORTED_MODULE_0__.x + _b__WEBPACK_IMPORTED_MODULE_1__.x);
+console.log(_a__WEBPACK_IMPORTED_MODULE_0__.x + _b__WEBPACK_IMPORTED_MODULE_1__.x);
 
 })();
 
