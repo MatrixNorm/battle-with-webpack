@@ -1,4 +1,8 @@
-import * as a from "./a";
-import * as b from "./b";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 
-console.log(a.x + b.x);
+function App() {
+  return <h2>hello!</h2>;
+}
+
+ReactDOM.render(<App />, document.getElementById("app"));
