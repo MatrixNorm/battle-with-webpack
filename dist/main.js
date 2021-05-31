@@ -1,3 +1,11 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -7,14 +15,7 @@
   \******************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-const c = __webpack_require__(/*! ./c */ "./src/c.js");
-
-console.log("Init module A");
-
-module.exports = {
-  x: 2 + c.x,
-};
-
+eval("const c = __webpack_require__(/*! ./c */ \"./src/c.js\");\n\nconsole.log(\"Init module A\");\n\nmodule.exports = {\n  x: 2 + c.x,\n};\n\n\n//# sourceURL=webpack://battle-with-webpack/./src/a.js?");
 
 /***/ }),
 
@@ -24,12 +25,7 @@ module.exports = {
   \******************/
 /***/ ((module) => {
 
-console.log("Init module B");
-
-module.exports = {
-  x: 3,
-};
-
+eval("console.log(\"Init module B\");\n\nmodule.exports = {\n  x: 3,\n};\n\n\n//# sourceURL=webpack://battle-with-webpack/./src/b.js?");
 
 /***/ }),
 
@@ -39,10 +35,17 @@ module.exports = {
   \******************/
 /***/ ((module) => {
 
-module.exports = {
-  x: 7,
-};
+eval("module.exports = {\n  x: 7,\n};\n\n\n//# sourceURL=webpack://battle-with-webpack/./src/c.js?");
 
+/***/ }),
+
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("const a = __webpack_require__(/*! ./a */ \"./src/a.js\");\nconst b = __webpack_require__(/*! ./b */ \"./src/b.js\");\n\nfunction lazy() {\n  console.log(a, b, a.x + b.x);\n}\n\nwindow.lazy = lazy;\n\n\n//# sourceURL=webpack://battle-with-webpack/./src/main.js?");
 
 /***/ })
 
@@ -73,23 +76,11 @@ module.exports = {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
-const a = __webpack_require__(/*! ./a */ "./src/a.js");
-const b = __webpack_require__(/*! ./b */ "./src/b.js");
-
-function lazy() {
-  console.log(a, b, a.x + b.x);
-}
-
-window.lazy = lazy;
-
-})();
-
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/main.js");
+/******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map
