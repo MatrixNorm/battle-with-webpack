@@ -9,6 +9,8 @@
 
 const c = __webpack_require__(/*! ./c */ "./src/c.js");
 
+console.log("Init module A");
+
 module.exports = {
   x: 2 + c.x,
 };
@@ -21,6 +23,8 @@ module.exports = {
   !*** ./src/b.js ***!
   \******************/
 /***/ ((module) => {
+
+console.log("Init module B");
 
 module.exports = {
   x: 3,
@@ -78,7 +82,11 @@ var __webpack_exports__ = {};
 const a = __webpack_require__(/*! ./a */ "./src/a.js");
 const b = __webpack_require__(/*! ./b */ "./src/b.js");
 
-console.log(a, b, a.x + b.x);
+function lazy() {
+  console.log(a, b, a.x + b.x);
+}
+
+window.lazy = lazy;
 
 })();
 
