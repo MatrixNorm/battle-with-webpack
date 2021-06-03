@@ -15,6 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./c */ "./src/c.js");
 
 
+console.log("a");
 const x = 2 + _c__WEBPACK_IMPORTED_MODULE_0__.x;
 
 
@@ -30,6 +31,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "x": () => (/* binding */ x)
 /* harmony export */ });
+console.log("b");
 const x = 3;
 
 
@@ -45,6 +47,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "x": () => (/* binding */ x)
 /* harmony export */ });
+console.log("c");
 const x = 7;
 
 
@@ -118,10 +121,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-console.log(_a__WEBPACK_IMPORTED_MODULE_0__, _b__WEBPACK_IMPORTED_MODULE_1__, _a__WEBPACK_IMPORTED_MODULE_0__.x + _b__WEBPACK_IMPORTED_MODULE_1__.x);
+console.log("main", _a__WEBPACK_IMPORTED_MODULE_0__, _b__WEBPACK_IMPORTED_MODULE_1__, _a__WEBPACK_IMPORTED_MODULE_0__.x + _b__WEBPACK_IMPORTED_MODULE_1__.x);
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map
