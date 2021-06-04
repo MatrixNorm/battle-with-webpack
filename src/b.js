@@ -1,2 +1,2 @@
 console.log("b");
-export const x = 3;
+export const x = 3.14;

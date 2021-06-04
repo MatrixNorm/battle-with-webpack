@@ -1,4 +1,8 @@
-import * as a from "./a";
-import * as b from "./b";
+import * as c from "./c";
 
-console.log("main", a, b, a.x + b.x);
+console.log("main...", c);
+
+setTimeout(() => {
+  console.log("importing a...");
+  import("./a").then((mod) => console.log(mod.x));
+}, 2000);
