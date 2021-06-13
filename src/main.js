@@ -1,8 +1,4 @@
-import * as c from "./c";
+import { checksort } from "is-sorted";
+import * as a from "./a";
 
-console.log("main...", c);
-
-setTimeout(() => {
-  console.log("importing a...");
-  import("./a").then((mod) => console.log(mod.x));
-}, 2000);
+console.log("main", checksort(a.arr));
